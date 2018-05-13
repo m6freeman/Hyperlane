@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1587996280302618}
+  m_IsPrefabParent: 1
+--- !u!1 &1587996280302618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4433041551868268}
+  - component: {fileID: 114031703748671846}
+  - component: {fileID: 114537614101431484}
+  - component: {fileID: 114532797730414990}
+  - component: {fileID: 114711218065288442}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4433041551868268
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587996280302618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13767214, y: 2.1047807, z: -8.569452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114031703748671846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587996280302618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f922d029e62ab43852f0a6096451e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockPoolSize: 5
+  blockPrefab: {fileID: 1223200981544846, guid: 403db711824ef5444af687c595ce95e9,
+    type: 2}
+  spawnSpeed: 1
+  spawnZPosition: 55
+  maxSpawnSpeed: 0.35
+  increaseSpeedRate: 1250
+--- !u!114 &114532797730414990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587996280302618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef8237ded2bdc644a1707447226d829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114537614101431484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587996280302618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469f15fa7974ee141ac413a17be9636c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starsPoolSize: 3
+  starsPrefab: {fileID: 1416011334985368, guid: 1478b16327fab174e9474a76361e0697,
+    type: 2}
+  spawnRate: 2
+--- !u!114 &114711218065288442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587996280302618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1b46491f9778948b1652694f0e9b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boosting: 0
+  RightStarParticles: {fileID: 0}
+  LeftStarParticles: {fileID: 0}
+  player: {fileID: 0}
+  PlayerMaterials:
+  - {fileID: 2100000, guid: 77031f82d809b4d4b96951b2a4cdf8ef, type: 2}
+  - {fileID: 2100000, guid: 0aa476f7baa77d1469f9bae6e8a10069, type: 2}
+  - {fileID: 2100000, guid: 9a63a8aed0148f6418143235cfe6305b, type: 2}
+  - {fileID: 2100000, guid: 55c5e0dd32c7e254ebaff2ebf47f5c13, type: 2}
+  ObstacleMaterials:
+  - {fileID: 2100000, guid: b84b3cd9ed87ff54a9654c829ae52789, type: 2}
+  - {fileID: 2100000, guid: f3f2c80ea27d37643a6b8d601bbcf6eb, type: 2}
+  - {fileID: 2100000, guid: ff4ff52844069aa449c8ea38e147f11c, type: 2}
+  - {fileID: 2100000, guid: 5c57ecaa503fa684f99c9fe4f27d9d83, type: 2}
+  speed: 50
+  gameOver: 0
+  scoreText: {fileID: 0}
+  comboText: {fileID: 0}
+  particles: {fileID: 0}
+  score: 0
+  highCombo: 0
+  playerMaterial: {fileID: 0}
