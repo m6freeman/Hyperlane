@@ -1,5 +1,5 @@
 # Hyperlane
 
-Prototype
+Prototype build in Unity
 
 https://m6freeman.itch.io/hyperlane
